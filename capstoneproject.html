@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="capstoneproject.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+  </head>
+  <body>
+    <div class="des">
+      <center><h1 class="title">Capstone Project</h1></center>
+      <center><p>Welcome to my Capstone Project! Each canvas represents a seperate scene of a scene and is interactive! Hope you enjoy!</p>
+  </div>
+
+    <div class="firstcanvas">
+    <center><h1>Winter</h1></center>
+    <p>Click to decorate the Trees with ornaments!</p>
+
+
+
+    <center><svg class="canvas" id="screen1" width="70%" viewbox="0 0 200 100" style="background-color: lightskyblue">
+      <!--Clouds -->
+      <path d="M0,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M15,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M30,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M45,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M60,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M75,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M90,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M105,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M120,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M135,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M150,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M165,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M180,0 a10,10 0 0,0 20,0" fill="gray"/>
+
+      <!--Groundsnow-->
+      <rect x="0" y="95" width="250" height="5" fill="gray"/>
+      <!--Stumps-->
+      <rect x="17" y="80" width="6" height="15" fill="brown"/>
+
+      <rect x="175" y="80" width="6" height="15" fill="brown"/>
+      <!--Trees -->
+      <polygon points="20,45 10,55 30,55" fill="green"/>
+      <polygon points="20,53 10,63 30,63" fill="green"/>
+      <polygon points="20,61 10,71 30,71" fill="green"/>
+      <polygon points="20,69 10,79 30,79" fill="green"/>
+      <polygon points="20,77 10,87 30,87" fill="green"/>
+
+      <polygon points="178,45 168,55 188,55" fill="green"/>
+      <polygon points="178,53 168,63 188,63" fill="green"/>
+      <polygon points="178,61 168,71 188,71" fill="green"/>
+      <polygon points="178,69 168,79 188,79" fill="green"/>
+      <polygon points="178,77 168,87 188,87" fill="green"/>
+
+      <!---------------------------------Snowman---------------------------------------->
+      <!--First circle-->
+      <circle cx="100" cy="88" r="8" fill="white">
+        <animate id="1cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 1cRightToLeft.end"/>
+        <animate id="1cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 1cLeftToRight.end"/>
+        <animate id="1cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 1cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
+
+      </circle>
+      <!--second circle-->
+      <circle cx="100" cy="78" r="6" fill="white">
+        <animate id="2cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 2cRightToLeft.end"/>
+        <animate id="2cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 2cLeftToRight.end"/>
+        <animate id="2cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 2cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
+        </circle>
+      <!--third circle-->
+      <circle cx="100" cy="68.5" r="4" fill="white">
+        <animate id="3cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 3cRightToLeft.end"/>
+        <animate id="3cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 3cLeftToRight.end"/>
+        <animate id="3cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 3cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
+        </circle>
+      <!--eyes-->
+      <circle cx="99" cy="68" r=".5" fill="black">
+        <animate id="1eyeMiddleLeftToRight" attributeName="cx" from="99" to="159" fill="freeze" dur="2s" begin="0s; 1eyeRightToLeft.end"/>
+        <animate id="1eyeRightToLeft" attributeName="cx" from="159" to="39" fill="freeze" dur="4s"  begin="0s; 1eyeLeftToRight.end"/>
+        <animate id="1eyeLeftToRight" attributeName="cx" from="39" to="159" fill="freeze" dur="4s"  begin="0s; 1eyeRightToLeft.end"/>
+        </circle>
+      <circle cx="102" cy="68" r=".5" fill="black">
+        <animate id="2eyeMiddleLeftToRight" attributeName="cx" from="102" to="162" fill="freeze" dur="2s" begin="0s; 2eyeRightToLeft.end"/>
+        <animate id="2eyeRightToLeft" attributeName="cx" from="162" to="42" fill="freeze" dur="4s"  begin="0s; 2eyeLeftToRight.end"/>
+        <animate id="2eyeLeftToRight" attributeName="cx" from="42" to="162" fill="freeze" dur="4s"  begin="0s; 2eyeRightToLeft.end"/>
+        </circle>
+
+      <!--Buttons-->
+      <circle cx="100" cy="85" r=".5" fill="black">
+        <animate id="1bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 1bRightToLeft.end"/>
+        <animate id="1bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 1bLeftToRight.end"/>
+        <animate id="1bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 1bRightToLeft.end"/>
+        </circle>
+      <circle cx="100" cy="80" r=".5" fill="black">
+        <animate id="2bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="2bRightToLeft.end"/>
+        <animate id="2bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 2bLeftToRight.end"/>
+        <animate id="2bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 2bRightToLeft.end"/>
+      </circle>
+      <circle cx="100" cy="75" r=".5" fill="black">
+        <animate id="3bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 3bRightToLeft.end"/>
+        <animate id="3bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 3bLeftToRight.end"/>
+        <animate id="3bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 3bRightToLeft.end"/>
+      </circle>
+     <!--Nose-->
+     <polygon points="104,70 100,69 100,71" fill="orange">
+       <animate id="1tMiddleLeftToRight" attributeName="points" from="104,70 100,69 100,71" to="164,70 160,69 160,71" fill="freeze" dur="2s" begin="0s; 1tRightToLeft.end"/>
+       <animate id="1tRightToLeft" attributeName="points" from="164,70 160,69 160,71" to="44,70 40,69 40,71" fill="freeze" dur="4s" begin="0s; 1tLeftToRight.end"/>
+       <animate id="1tLeftToRight" attributeName="points" from="44,70 40,69 40,71" to="164,70 160,69 160,71" fill="freeze" dur="4s" begin="0s; 1tRightToLeft.end"/>
+     </polygon>
+     <!--arms-->
+     <line x1="95" y1="77" x2="90" y2="85" stroke="brown" stroke-width="1">
+     <animate id="1linePoint1MiddleLeftToRight" attributeName="x1" from="95" to="155" fill="freeze" dur="2s" begin="0s; 1linePoint1RightToLeft.end"/>
+     <animate id="1linePoint1RightToLeft" attributeName="x1" from="155" to="35" fill="freeze" dur="4s" begin="0s; 1linePoint1LeftToRight.end"/>
+     <animate id="1linePoint1LeftToRight" attributeName="x1" from="35" to="155" fill="freeze" dur="4s" begin="0s; 1linePoint1RightToLeft.end"/>
+
+     <animate id="1linePoint2lMiddleLeftToRight" attributeName="x2" from="90" to="150" fill="freeze" dur="2s" begin="1linePoint2RightToLeft.end"/>
+     <animate id="1linePoint2RightToLeft" attributeName="x2" from="150" to="30" fill="freeze" dur="4s" begin="0s; 1linePoint2LeftToRight.end"/>
+     <animate id="1linePoint2LeftToRight" attributeName="x2" from="30" to="150" fill="freeze" dur="4s" begin="0s; 1linePoint2RightToLeft.end"/>
+   </line>
+
+
+     <line x1="105" y1="77" x2="110" y2="85" stroke="brown" stroke-width="1">
+     <animate id="2linePoint1MiddleLeftToRight" attributeName="x1" from="105" to="165" fill="freeze" dur="2s" begin="0s; 2linePoint1RightToLeft.end"/>
+     <animate id="2linePoint1RightToLeft" attributeName="x1" from="165" to="45" fill="freeze" dur="4s" begin="0s; 2linePoint1LeftToRight.end"/>
+     <animate id="2linePoint1LeftToRight" attributeName="x1" from="45" to="165" fill="freeze" dur="4s" begin="0s; 2linePoint1RightToLeft.end"/>
+
+     <animate id="2linePoint2lMiddleLeftToRight" attributeName="x2" from="110" to="170" fill="freeze" dur="2s" begin="0s; 2linePoint2RightToLeft.end"/>
+     <animate id="2linePoint2RightToLeft" attributeName="x2" from="170" to="50" fill="freeze" dur="4s" begin="0s; 2linePoint2LeftToRight.end"/>
+     <animate id="2linePoint2LeftToRight" attributeName="x2" from="50" to="170" fill="freeze" dur="4s" begin="0s; 2linePoint2RightToLeft.end"/>
+     </line>
+     <!--Light line-->
+     <line x1="20" y1="45" x2="178" y2="45" stroke="black" stroke-width="1"/>
+
+     <!--Lights-->
+     <circle cx="40" cy="46" r="1" fill="red">
+
+       <animate id="1redToBlue" attributeName="fill" from="red" to="blue" fill="freeze" dur=".5s" begin="0s; 1blueToRed.end"/>
+       <animate id="1blueToRed" attributeName="fill" from="blue" to="red" dur=".5s" fill="freeze" begin="0s; 1redToBlue.end"/>
+     </circle>
+     <circle cx="60" cy="46" r="1" fill="green">
+       <animate id="1greenToYellow" attributeName="fill" from="green" to="yellow" fill="freeze" dur=".5s" begin="0s; 1yellowToGreen.end"/>
+       <animate id="1yellowToGreen" attributeName="fill" from="yellow" to="green" dur=".5s" fill="freeze" begin="0s; 1greenToYellow.end"/>
+       </circle>
+     <circle cx="80" cy="46" r="1" fill="blue">
+       <animate id="2blueToRed" attributeName="fill" from="blue" to="red" fill="freeze" dur=".5s" begin="0s; 2redToBlue.end"/>
+       <animate id="2redToBlue" attributeName="fill" from="red" to="blue" dur=".5s" fill="freeze" begin="0s; 2blueToRed.end"/>
+       </circle>
+     <circle cx="100" cy="46" r="1" fill="yellow">
+       <animate id="2yellowToGreen" attributeName="fill" from="yellow" to="green" fill="freeze" dur=".5s" begin="0s; 2greenToYellow.end"/>
+       <animate id="2greenToYellow" attributeName="fill" from="green" to="yellow" dur=".5s" fill="freeze" begin="0s; 2yellowToGreen.end"/>
+       </circle>
+     <circle cx="120" cy="46" r="1" fill="pink">
+       <animate id="1pinkToPurple" attributeName="fill" from="pink" to="purple" fill="freeze" dur=".5s" begin="0s; 1purpleToPink.end"/>
+       <animate id="1purpleToPink" attributeName="fill" from="purple" to="pink" dur=".5s" fill="freeze" begin="0s; 1pinkToPurple.end"/>
+       </circle>
+     <circle cx="140" cy="46" r="1" fill="orange">
+       <animate id="1orangeToRed" attributeName="fill" from="orange" to="red" fill="freeze" dur=".5s" begin="0s; 1redToOrange.end"/>
+       <animate id="1redToOrange" attributeName="fill" from="red" to="orange" dur=".5s" fill="freeze" begin="0s; 1orangeToRed.end"/>
+       </circle>
+     <circle cx="160" cy="46" r="1" fill="purple">
+       <animate id="2purpleToPink" attributeName="fill" from="purple" to="pink" fill="freeze" dur=".5s" begin="0s; 2pinkToPurple.end"/>
+       <animate id="2pinkToPurple" attributeName="fill" from="pink" to="purple" dur=".5s" fill="freeze" begin="0s; 2purpleToPink.end"/>
+       </circle>
+
+     <!--Snow paritcles-->
+     <circle cx="10" cy="15" r="1" fill="white">
+     <animate id="fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; fall2.end"/>
+     <animate id="fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; fall1.end"/>
+     </circle>
+     <circle cx="20" cy="25" r="1" fill="white">
+     <animate id="2fall1" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 2fall2.end"/>
+     <animate id="2fall2" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 2fall1.end"/>
+     </circle>
+     <circle cx="30" cy="15" r="1" fill="white">
+     <animate id="3fall1" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 3fall2.end"/>
+     <animate id="3fall2" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 3fall1.end"/>
+       </circle>
+     <circle cx="40" cy="25" r="1" fill="white">
+     <animate id="4fall1"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 4fall2.end"/>
+     <animate id="4fall2"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 4fall1.end"/>
+       </circle>
+     <circle cx="50" cy="15" r="1" fill="white">
+     <animate id="5fall1" attributeName="cy" from="15" to="95" dur="10s"fill="freeze" begin="0s; 5fall2.end"/>
+     <animate id="5fall2" attributeName="cy" from="15" to="95" dur="10s"fill="freeze" begin="0s; 5fall1.end"/>
+       </circle>
+     <circle cx="60" cy="25" r="1" fill="white">
+     <animate id="6fall1"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 6fall2.end"/>
+     <animate id="6fall2"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 6fall1.end"/>
+       </circle>
+     <circle cx="70" cy="15" r="1" fill="white">
+       <animate id="7fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 7fall2.end"/>
+       <animate id="7fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 7fall1.end"/>
+       </circle>
+     <circle cx="80" cy="25" r="1" fill="white">
+       <animate id="8fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 8fall2.end"/>
+       <animate id="8fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 8fall1.end"/>
+       </circle>
+     <circle cx="90" cy="15" r="1" fill="white">
+       <animate id="9fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 9fall2.end"/>
+       <animate id="9fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 9fall1.end"/>
+       </circle>
+     <circle cx="100" cy="25" r="1" fill="white">
+       <animate id="10fall1" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 10fall2.end"/>
+       <animate id="10fall2" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 10fall1.end"/>
+       </circle>
+     <circle cx="110" cy="15" r="1" fill="white">
+       <animate id="11fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 11fall2.end"/>
+       <animate id="11fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 11fall1.end"/>
+       </circle>
+     <circle cx="120" cy="25" r="1" fill="white">
+       <animate id="12fall1" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 12fall2.end"/>
+       <animate id="12fall2" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 12fall1.end"/>
+       </circle>
+     <circle cx="130" cy="15" r="1" fill="white">
+       <animate id="13fall1" attributeName="cy" from="25" to="95" dur="8s" fill="freeze" begin="0s; 13fall2.end"/>
+       <animate id="13fall2" attributeName="cy" from="25" to="95" dur="8s" fill="freeze" begin="0s; 13fall1.end"/>
+       </circle>
+     <circle cx="140" cy="25" r="1" fill="white">
+       <animate id="14fall1" attributeName="cy" from="15" to="95" dur="9s" fill="freeze" begin="0s; 14fall2.end"/>
+       <animate id="14fall2" attributeName="cy" from="15" to="95" dur="9s" fill="freeze" begin="0s; 14fall1.end"/>
+       </circle>
+     <circle cx="150" cy="15" r="1" fill="white">
+       <animate id="15fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 15fall2.end"/>
+       <animate id="15fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 15fall1.end"/>
+       </circle>
+     <circle cx="160" cy="25" r="1" fill="white">
+       <animate id="16fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 16fall2.end"/>
+       <animate id="16fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 16fall1.end"/>
+       </circle>
+     <circle cx="170" cy="15" r="1" fill="white">
+       <animate id="17fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall2.end"/>
+       <animate id="17fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall1.end"/>
+       </circle>
+
+       <!--Sun-->
+       <circle cx="200" cy ="15" r="10" fill-opacity="0.75" fill="yellow">
+         <animate attributeName="opacity" from="0.75" to="0" dur="3s" fill="freeze" begin="mouseover"/>
+         </circle>
+       <!--Hover text-->
+         <text x="190" y="15" font-family="sans-serif" font-size="3" fill="lightskyblue" >Hover </text>
+         <text x="195" y="20" font-family="sans-serif" font-size="3" fill="lightskyblue" >me </text>
+</svg></center>
+</div>
+<div class="secondcanvas">
+  <center><h1>
+    Spring
+  </h1></center>
+  <p>Click the petals to pick them and click the flower to change its color!</p>
+
+
+<center><svg width="70%" viewbox="0 0 200 100" style="background-color: lightskyblue"><path d="M0,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M15,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M30,0 a10,10 0 0,0 20,0" fill="white"/>
+
+
+<path d="M75,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M90,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M105,0 a10,10 0 0,0 20,0" fill="white"/>
+
+
+<path d="M135,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M150,0 a10,10 0 0,0 20,0" fill="white"/>
+<path d="M165,0 a10,10 0 0,0 20,0" fill="white"/>
+
+<!--Groundsnow-->
+<rect x="0" y="95" width="250" height="5" fill="lightgreen"/>
+
+<!--Grass-->
+<rect x="10" y="93" width="2" height="5" fill="green"/>
+<rect x="15" y="91" width="2" height="6" fill="green"/>
+<rect x="20" y="92" width="2" height="4" fill="green"/>
+<rect x="25" y="93" width="2" height="5" fill="green"/>
+<rect x="30" y="92" width="2" height="5" fill="green"/>
+<rect x="35" y="91" width="2" height="6" fill="green"/>
+<rect x="40" y="92" width="2" height="4" fill="green"/>
+<rect x="45" y="93" width="2" height="5" fill="green"/>
+<rect x="50" y="92" width="2" height="5" fill="green"/>
+<rect x="55" y="91" width="2" height="6" fill="green"/>
+<rect x="60" y="92" width="2" height="4" fill="green"/>
+<rect x="65" y="93" width="2" height="5" fill="green"/>
+<rect x="70" y="92" width="2" height="5" fill="green"/>
+<rect x="75" y="91" width="2" height="6" fill="green"/>
+<rect x="80" y="92" width="2" height="4" fill="green"/>
+<rect x="85" y="92" width="2" height="5" fill="green"/>
+<rect x="90" y="92" width="2" height="5" fill="green"/>
+<rect x="95" y="91" width="2" height="6" fill="green"/>
+<rect x="100" y="92" width="2" height="4" fill="green"/>
+<rect x="105" y="93" width="2" height="5" fill="green"/>
+<rect x="110" y="92" width="2" height="5" fill="green"/>
+<rect x="115" y="91" width="2" height="6" fill="green"/>
+<rect x="120" y="92" width="2" height="4" fill="green"/>
+<rect x="125" y="93" width="2" height="5" fill="green"/>
+<rect x="130" y="92" width="2" height="5" fill="green"/>
+<rect x="135" y="91" width="2" height="6" fill="green"/>
+<rect x="140" y="92" width="2" height="4" fill="green"/>
+<rect x="145" y="93" width="2" height="5" fill="green"/>
+<rect x="150" y="92" width="2" height="5" fill="green"/>
+<rect x="155" y="91" width="2" height="6" fill="green"/>
+<rect x="160" y="92" width="2" height="4" fill="green"/>
+<rect x="165" y="93" width="2" height="5" fill="green"/>
+<rect x="170" y="92" width="2" height="5" fill="green"/>
+<rect x="175" y="91" width="2" height="6" fill="green"/>
+<rect x="180" y="92" width="2" height="4" fill="green"/>
+<rect x="185" y="93" width="2" height="5" fill="green"/>
+<!--FLOWERS -->
+<rect x="10" y="73" width="2" height="20" fill="green"/>
+<polygon points="16,80 12,79 12,81" fill="green">
+</polygon>
+<polygon points="6,80 10,79 10,81" fill="green">
+</polygon>
+<circle cx="11" cy="72" r="5" fill="yellow" fill-opacity="0.5">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<rect x="45" y="73" width="2" height="20" fill="green"/>
+<polygon points="51,80 47,79 47,81" fill="green">
+</polygon>
+<polygon points="41,80 45,79 45,81" fill="green">
+</polygon>
+<circle cx="46" cy="72" r="5" fill="yellow " fill-opacity="0.50">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<rect x="80" y="73" width="2" height="20" fill="green"/>
+<polygon points="86,80 82,79 82,81" fill="green">
+</polygon>
+<polygon points="76,80 80,79 80,81" fill="green">
+</polygon>
+<circle cx="81" cy="72" r="5" fill="yellow" fill-opacity="0.50">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<rect x="115" y="73" width="2" height="20" fill="green"/>
+<polygon points="121,80 117,79 117,81" fill="green">
+</polygon>
+<polygon points="111,80 115,79 115,81" fill="green">
+</polygon>
+<circle cx="116" cy="72" r="5" fill="yellow" fill-opacity="0.50">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<rect x="150" y="73" width="2" height="20" fill="green"/>
+<polygon points="156,80 152,79 152,81" fill="green">
+</polygon>
+<polygon points="146,80 150,79 150,81" fill="green">
+</polygon>
+<circle cx="151" cy="72" r="5" fill="yellow" fill-opacity="0.50">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<rect x="185" y="73" width="2" height="20" fill="green"/>
+<polygon points="191,80 187,79 187,81" fill="green">
+</polygon>
+<polygon points="181,80 185,79 185,81" fill="green">
+</polygon>
+<circle cx="186" cy="72" r="5" fill="yellow" fill-opacity="0.50">
+  <animate  attributeName="fill-opacity" from="0.50" to="1" dur=".5s" fill="freeze" begin="click"/>
+  <animate  attributeName="fill" from="yellow" to="red" dur=".5s" fill="freeze" begin="click"/>
+</circle>
+
+<!--Butterflies-->
+<image xlink:href="images/buttefly.png" x="60" y="50" height="30px" width="30px">
+  <animate id="FlyRightToLeft" attributeName="x" from="0" to="180" fill="freeze" dur="3s" begin="0s; FlyLeftToRight.end"/>
+  <animate id="FlyLeftToRight" attributeName="x" from="180" to="0" dur="3s" fill="freeze" begin="0s; FlyRightToLeft.end"/>
+</image>
+
+<!--Petals-->
+<polygon points="24,72 16,70 16,74" fill="white">
+  <animate  attributeName="points"  to="24,2 16,0 16,4" dur="3s" fill="freeze" begin="click"/>
+
+</polygon>
+<polygon points="14,68 11,62 8,68" fill="white">
+  <animate  attributeName="points"  to="14,2 11,0 8,2" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="-2,72 6,70 6,74" fill="white">
+  <animate  attributeName="points"  to="-2,2 6,0 6,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+<polygon points="59,72 51,70 51,74" fill="white">
+  <animate  attributeName="points"  to="59,2 51,0 51,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="49,68 46,62 43,68" fill="white">
+  <animate  attributeName="points"  to="49,4 46,0 43,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="33,72 41,70 41,74" fill="white">
+  <animate  attributeName="points"  to="33,2 41,0 41,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+<polygon points="94,72 86,70 86,74" fill="white">
+  <animate  attributeName="points"  to="94,2 86,0 86,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="84,68 81,62 78,68" fill="white">
+  <animate  attributeName="points"  to="84,4 81,0 78,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="68,72 76,70 76,74" fill="white">
+  <animate  attributeName="points"  to="68,2 76,0 76,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+<polygon points="129,72 121,70 121,74" fill="white">
+  <animate  attributeName="points"  to="129,2 121, 0 121,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="119,68 116,62 113,68" fill="white">
+  <animate  attributeName="points"  to="119,2 116,-4 113,2" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="103,72 111,70 111,74" fill="white">
+  <animate  attributeName="points"  to="103,2 111,0 111,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+<polygon points="164,72 156,70 156,74" fill="white">
+  <animate  attributeName="points"  to="164,2 156,0 156,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="154,68 151,62 148,68" fill="white">
+  <animate  attributeName="points"  to="154,4 151,0 148,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="138,72 146,70 146,74" fill="white">
+  <animate  attributeName="points"  to="138,2 146,0 146,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+<polygon points="199,72 191,70 191,74" fill="white">
+  <animate  attributeName="points"  to="199,2 191,0 191,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="189,68 186,62 183,68" fill="white">
+  <animate  attributeName="points"  to="189,4 186,0 183,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+<polygon points="173,72 181,70 181,74" fill="white">
+  <animate  attributeName="points"  to="173,2 181,0 181,4" dur="3s" fill="freeze" begin="click"/>
+</polygon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg></center>
+
+</div>
+
+<div class="thirdcanvas">
+  <center><h1>
+    Summer
+  </h1></center>
+  <p>Click to add some fish to the sea!</p>
+
+
+<center><svg id="screen3" width="70%" viewbox="0 0 200 100" style="background-color: lightskyblue">
+  <!--Ship-->
+  <image xlink:href="images/ship.png" x="190" y="50" height="30px" width="30px">
+    <animate id="ShipUptoDown" attributeName="y" from="50" to="53" fill="freeze" dur="1s" begin="0s; ShipDowntoUp.end"/>
+    <animate id="ShipDowntoUp" attributeName="y" from="53" to="50" dur="1s" fill="freeze" begin="0s; ShipUptoDown.end"/>
+    <animate id="ShipRightToLeft" attributeName="x" from="190" to="100" fill="freeze" dur="6s" begin="0s; ShipLeftToRight.end"/>
+    <animate id="ShipLeftToRight" attributeName="x" from="100" to="190" dur="6s" fill="freeze" begin="0s; ShipRightToLeft.end"/>
+  </image>
+
+  <!--Clouds-->
+  <path d="M15,0 a10,10 0 0,0 20,0" fill="white"/>
+  <path d="M30,0 a10,10 0 0,0 20,0" fill="white"/>
+
+
+  <path d="M75,0 a10,10 0 0,0 20,0" fill="white"/>
+  <path d="M90,0 a10,10 0 0,0 20,0" fill="white"/>
+  <path d="M105,0 a10,10 0 0,0 20,0" fill="white"/>
+
+
+  <path d="M135,0 a10,10 0 0,0 20,0" fill="white"/>
+  <path d="M150,0 a10,10 0 0,0 20,0" fill="white"/>
+  <path d="M165,0 a10,10 0 0,0 20,0" fill="white"/>
+
+  <!--Sun-->
+  <circle cx="195" cy="5" r="12" fill="yellow">
+  </circle>
+  <!--SUN BEAMZ -->
+  <line x1="175" y1="15" x2="190" y2="5"
+      stroke-width="3" stroke="yellow"/>
+      <line x1="180" y1="20" x2="195" y2="7"
+          stroke-width="3" stroke="yellow"/>
+          <line x1="190" y1="25" x2="200" y2="7"
+              stroke-width="3" stroke="yellow"/>
+
+
+  <!--Duh sea-->
+  <circle cx="65" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="85" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="105" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="125" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="145" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="165" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="185" cy="88" r="12" fill="blue">
+  </circle>
+  <circle cx="205" cy="88" r="12" fill="blue">
+  </circle>
+
+  <rect x="40" y="80" width="200" height="20" fill="blue"/>
+  <!--Beach sand-->
+  <polygon points="0,200 0,50 80,100" fill="#f2f28e">
+  </polygon>
+
+  <!--Umbrela-->
+<rect x="20" y="45" width="2" height="20" fill="grey"/>
+<polygon points="10,51 21,40 21,47 " fill="yellow">
+</polygon>
+<polygon points="32,51 21,40 21,47 " fill="green">
+</polygon>
+
+
+
+
+<!--Mr.Crabs-->
+<image xlink:href="images/crab.png" x="40" y="65" height="20px" width="20px">
+  <animate id="CrabUptoDown" attributeName="y" from="65" to="40" fill="freeze" dur="3s" begin="0s; CrabDowntoUp.end"/>
+  <animate id="CrabDowntoUp" attributeName="y" from="40" to="65" dur="3s" fill="freeze" begin="0s; CrabUptoDown.end"/>
+  <animate id="CrabRightToLeft" attributeName="x" from="40" to="0" fill="freeze" dur="3s" begin="0s; CrabLeftToRight.end"/>
+  <animate id="CrabLeftToRight" attributeName="x" from="0" to="40" dur="3s" fill="freeze" begin="0s; CrabRightToLeft.end"/>
+</image>
+
+
+</svg></center>
+</div>
+<div class="fourthcanvas">
+  <center><h1>
+    Autumn
+  </h1></center>
+  <p> Click anywhere to add rain to the scene<p>
+
+
+<center><svg class="canvas" id="screen4" width="70%" viewbox="0 0 200 100" style="background-color: black">
+  <!--Stars-->
+  <image xlink:href="images/start2.png" x="20" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="1VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 1InvisToVis.end"/>
+    <animate id="1InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 1VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="30" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="2VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 2InvisToVis.end"/>
+    <animate id="2InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 2VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="40" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="3VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 3InvisToVis.end"/>
+    <animate id="3InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 3VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="50" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="4VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 4InvisToVis.end"/>
+    <animate id="4InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 4VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="60" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="5VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 5InvisToVis.end"/>
+    <animate id="5InvisToVis" attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze" begin="0s; 5VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="70" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="6VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 6InvisToVis.end"/>
+    <animate id="6InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 6VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="80" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="7VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 7InvisToVis.end"/>
+    <animate id="7InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 7VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="90" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="8VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 8InvisToVis.end"/>
+    <animate id="8InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 8VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="100" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="9VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 9InvisToVis.end"/>
+    <animate id="9InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 9VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="110" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="10VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 10InvisToVis.end"/>
+    <animate id="10InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 10VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="120" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="11VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 11InvisToVis.end"/>
+    <animate id="11InvisToVis" attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze" begin="0s; 11VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="130" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="12VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 12InvisToVis.end"/>
+    <animate id="12InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 12VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="140" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="13VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 13InvisToVis.end"/>
+    <animate id="13InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 13VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="150" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="14VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 14InvisToVis.end"/>
+    <animate id="14InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 14VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="160" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="15VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 15InvisToVis.end"/>
+    <animate id="15InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 15VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="170" y="40" height="3px" width="3px" fill-opacity:"1">
+    <animate id="16VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 16InvisToVis.end"/>
+    <animate id="16InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 16VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="180" y="30" height="3px" width="3px" fill-opacity:"1">
+    <animate id="17VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 17InvisToVis.end"/>
+    <animate id="17InvisToVis" attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze" begin="0s; 17VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="30" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="18VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 18InvisToVis.end"/>
+    <animate id="18InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 18VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="50" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="19VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 19InvisToVis.end"/>
+    <animate id="19InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 19VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="70" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="20VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 20InvisToVis.end"/>
+    <animate id="20InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 20VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="90" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="21VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 21InvisToVis.end"/>
+    <animate id="21InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 21VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="110" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="22VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 22InvisToVis.end"/>
+    <animate id="22InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 22VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="130" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="22VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 22InvisToVis.end"/>
+    <animate id="22InvisToVis" attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze" begin="0s; 22VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="150" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="23VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 23InvisToVis.end"/>
+    <animate id="23InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 23VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="170" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="23VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 23InvisToVis.end"/>
+    <animate id="23InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 23VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="190" y="20" height="3px" width="3px" fill-opacity:"1">
+    <animate id="24VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 24InvisToVis.end"/>
+    <animate id="24InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 24VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="20" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="25VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 25InvisToVis.end"/>
+    <animate id="25InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 25VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="40" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="26VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 26InvisToVis.end"/>
+    <animate id="26InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 26VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="60" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="27VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 27InvisToVis.end"/>
+    <animate id="27InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 27VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="80" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="28VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 28InvisToVis.end"/>
+    <animate id="28InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 28VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="100" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="28VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 28InvisToVis.end"/>
+    <animate id="28InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 28VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="120" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="29VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 29InvisToVis.end"/>
+    <animate id="29InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 29VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="140" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="30VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 30InvisToVis.end"/>
+    <animate id="30InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 30VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="160" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="31VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.2s" begin="0s; 31InvisToVis.end"/>
+    <animate id="31InvisToVis" attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze" begin="0s; 31VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="180" y="50" height="3px" width="3px" fill-opacity:"1">
+    <animate id="32VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".7s" begin="0s; 32InvisToVis.end"/>
+    <animate id="32InvisToVis" attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze" begin="0s; 32VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="30" y="60" height="3px" width="3px" fill-opacity:"1">
+    <animate id="33VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur="1s" begin="0s; 33InvisToVis.end"/>
+    <animate id="33InvisToVis" attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0s; 33VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="50" y="60" height="3px" width="3px" fill-opacity:"1">
+    <animate id="34VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".5s" begin="0s; 34InvisToVis.end"/>
+    <animate id="34InvisToVis" attributeName="opacity" from="0" to="1" dur=".5s" fill="freeze" begin="0s; 34VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="70" y="60" height="3px" width="3px" fill-opacity:"1">
+    <animate id="35VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".6s" begin="0s; 35InvisToVis.end"/>
+    <animate id="35InvisToVis" attributeName="opacity" from="0" to="1" dur=".6s" fill="freeze" begin="0s; 35VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="90" y="60" height="3px" width="3px" fill-opacity:"1">
+    <animate id="36VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".8s" begin="0s; 36InvisToVis.end"/>
+    <animate id="36InvisToVis" attributeName="opacity" from="0" to="1" dur=".8s" fill="freeze" begin="0s; 36VisToInvis.end"/>
+  </image>
+  <image xlink:href="images/start2.png" x="110" y="60" height="3px" width="3px" fill-opacity:"1">
+    <animate id="37VisToInvis" attributeName="opacity" from="1" to="0" fill="freeze" dur=".9s" begin="0s; 37InvisToVis.end"/>
+    <animate id="37InvisToVis" attributeName="opacity" from="0" to="1" dur=".9" fill="freeze" begin="0s; 37VisToInvis.end"/>
+  </image>
+
+
+  <path d="M15,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <path d="M30,0 a10,10 0 0,0 20,0" fill="grey"/>
+
+
+  <path d="M75,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <path d="M90,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <path d="M105,0 a10,10 0 0,0 20,0" fill="grey"/>
+
+
+  <path d="M135,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <path d="M150,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <path d="M165,0 a10,10 0 0,0 20,0" fill="grey"/>
+  <!--Grass-->
+  <rect x="0" y="95" width="250" height="5" fill="green"/>
+
+  <!--TREES-->
+  <rect x="17" y="80" width="6" height="15" fill="brown"/>
+
+  <polygon points="20,45 10,55 30,55" fill="green"/>
+  <polygon points="20,53 10,63 30,63" fill="green"/>
+  <polygon points="20,61 10,71 30,71" fill="green"/>
+  <polygon points="20,69 10,79 30,79" fill="green"/>
+  <polygon points="20,77 10,87 30,87" fill="green"/>
+
+  <rect x="47" y="80" width="6" height="15" fill="brown"/>
+
+  <polygon points="50,45 40,55 60,55" fill="green"/>
+  <polygon points="50,53 40,63 60,63" fill="green"/>
+  <polygon points="50,61 40,71 60,71" fill="green"/>
+  <polygon points="50,69 40,79 60,79" fill="green"/>
+  <polygon points="50,77 40,87 60,87" fill="green"/>
+
+  <rect x="77" y="80" width="6" height="15" fill="brown"/>
+
+  <polygon points="80,45 70,55 90,55" fill="green"/>
+  <polygon points="80,53 70,63 90,63" fill="green"/>
+  <polygon points="80,61 70,71 90,71" fill="green"/>
+  <polygon points="80,69 70,79 90,79" fill="green"/>
+  <polygon points="80,77 70,87 90,87" fill="green"/>
+
+  <rect x="147" y="80" width="6" height="15" fill="brown"/>
+
+  <polygon points="150,45 140,55 160,55" fill="green"/>
+  <polygon points="150,53 140,63 160,63" fill="green"/>
+  <polygon points="150,61 140,71 160,71" fill="green"/>
+  <polygon points="150,69 140,79 160,79" fill="green"/>
+  <polygon points="150,77 140,87 160,87" fill="green"/>
+
+  <rect x="177" y="80" width="6" height="15" fill="brown"/>
+
+  <polygon points="180,45 170,55 190,55" fill="green"/>
+  <polygon points="180,53 170,63 190,63" fill="green"/>
+  <polygon points="180,61 170,71 190,71" fill="green"/>
+  <polygon points="180,69 170,79 190,79" fill="green"/>
+  <polygon points="180,77 170,87 190,87" fill="green"/>
+
+  <!--campfire-->
+  <image xlink:href="images/fire.gif" x="120" y="80" height="20px" width="20px"/>
+  <!--person-->
+  <image xlink:href="images/person2.png" x="95" y="60" height="40px" width="40px"/>
+  <image xlink:href="images/moon.png" x="180" y="5" height="20px" width="20px"/>
+
+
+
+
+
+
+</svg></center>
+</div>
+  <script src="capstoneproject.js"></script>
+  </body>
+
+</html>

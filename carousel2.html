@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Browsers read top to bottom. So we put custom files after the generic. -->
+        
+        <link href='https://fonts.googleapis.com/css?family=Cantarell:700italic,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="carousel2.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+ </head>
+    <body>
+        <!-- part of site content -->
+       <header>
+         <a href="index.html" id="logo">
+          <h1><img src="image/coologo.png" alt="Logo Image"></h1>
+          <h2>Student</h2>
+         </a>
+         <!-- Nav is short for navigation -->
+         <nav>
+             <!-- unordered list, bulleted list -->
+             <ul>
+             <!-- List Item --> 
+                 <li><a href="index2.html">Portfolio</a></li>
+                 <li><a href="about2.html">About</a></li>
+                 <li><a href="contact2.html">Contact</a></li>
+                 <li> <a href="carousel2.html" class="selected">Carousel</a></li>
+             </ul>   
+           </nav>
+       </header>
+        <br><br> 
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        
+       <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="image/FC wallpaper.jpg" alt="coral" width="200" height="145">
+      </div>
+
+      <div class="item">
+        <img src="image/G-eazy w.jpg" alt="coral" width="200" height="145">
+      </div>
+    
+      <div class="item">
+        <img src="image/wp2.jpg" alt="coral" width="200" height="145">
+      </div>
+
+      <div class="item">
+        <img src="image/wp3.jpg" alt="coral" width="200" height="145">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        
+        
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+          <p>Some text in the model</p>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+            <div>
+            <footer>
+                <!-- Absolute path when it is absolutely necessary, Relative paths whenever we can -->
+                <a href="http://twitter.com/@Lng_John"><img src="image/twitter.jpg" alt="Twitter Handle" class="social-media-icon"></a>
+                <a href="mailto:Wa5570Jo0219@pusd.us"><img src="image/gmail.jpg" alt="My Gmail" class="social-media-icon"></a> 
+                <p>&copy; 2015 John Walkiewicz</p>
+            </footer>
+        </div>
+         
+        
+         
+    </body>
+</html>
+

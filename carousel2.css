@@ -1,0 +1,270 @@
+/********************************
+COLORS
+********************************/
+body {
+    background: lightgrey;
+    color: #999;
+}
+
+a {
+ color: darkgreen;   
+}
+
+header {
+    background: darkgreen;
+}
+
+h1, h2 {
+    color: green;
+}
+
+nav {
+    background: darkgreen;  
+}
+/*Pseudo-Class*/
+nav a, nav a:visited{
+    color: black;
+}
+
+nav a.selected, nav a:hover {
+    color: yellow;
+}
+
+/*******************************
+PAGE PORTFOLIO
+*******************************/
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: lightgrey;
+    color: #bdc3c7;
+}
+
+#gallery li a p {
+ margin: 0;
+ padding: 5%;
+ font-size: 0.9em;
+ color: green;
+}
+
+
+/*******************************
+ABOUT ME PAGE 
+*******************************/
+.profile-photo {
+    display: box;
+    max-width: 0 auto 30px;
+    border-radius: 15%;
+}
+
+
+/*******************************
+CONTACT PAGE 
+*******************************/
+.contact-info a {
+   display: block;
+   min-height: 20px;
+   /*by default it will always repeat background images*/
+   background-repeat: no-repeat;
+   /*resize the background img*/
+   background-size: 20px 20px;
+   padding: 0 0 0 30px;
+   margin: 0 0 10px;
+}
+
+/*******************************
+GENERAL
+*******************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    
+}
+
+#wrapper {
+    /*max-width is related to width, but instead of width, max-width that it can be smaller for mobile devices/tablets*/
+    max-width: 940px;
+    /*margin 0 is for all sides*/
+    margin: 0 auto;
+    /*Values for first one is top and bottom. Second one if left to right.*/
+    padding: 0 5%;
+    }
+    
+    h3 {
+        margin: 0 0 1em 0;
+    }
+    
+    
+/*******************************
+HEADER
+*******************************/
+header {
+    float: right;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+    
+    #logo {
+        /*our name and description of who we are*/
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        font-family: 'Cantarell', sans-serif;
+        margin: 15px 0;
+        font-size: 1.75em;
+    }
+    
+    h2 {
+        font-size: 0.75em;
+        /*1st value is for top. 2nd value if for left and right. 3rd value is for bottom.*/
+        margin: -30px 16px 0;
+        font-weight: bold;
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    /******************************
+    NAVIGATION
+    ******************************/
+    nav {
+        text-align: center;
+        padding: 10px 0;
+        margin: 20px 0;
+       
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0 10px;
+        }
+        
+        nav li {
+            display: inline-block;
+        }
+        
+        nav a {
+            font-weight: 800;
+            padding: 15px 10px;
+        }
+        
+    /******************************
+    FOOTER
+    ******************************/
+    footer {
+        font-size: 0.75em;
+        text-align: center;
+        padding-top: 50px;
+        color: #ccc;
+        clear: both;
+    }
+    .social-media-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+    
+/********************************
+MEDIA QUERIES
+********************************/
+/*TWO COLUMN LAYOUT*/
+
+@media screen and (min-width: 480px){
+    #primary {
+        width: 50%;
+        float: left;
+    }
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    /*THREE COLUMN LAYOUT PORTFOLIO*/
+    #gallery li {
+        width: 28.3333%;
+    }
+    #gallery li:nth-child(4n){
+        clear: left;
+    }
+    /*ABOUT PAGE*/
+    .profile-photo {
+        float:left;
+        margin: 0 5% 80px;
+    }
+    
+}
+
+@media screen and (min-width: 660px ){
+  /*NAV*/
+  nav {
+     background: none;
+     float: right;
+     font-size: 1.125em;
+     margin-right: 5%;
+     text-align: right;
+     width: 45%;
+  }
+  #logo {
+      float: left;
+      margin-left: 5%;
+      text-align: left;
+      width: 45%
+  }
+  h1 {
+      font-size: 2.5em;
+  }
+  h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+  header {
+      border-bottom: 5px solid greenyellow;
+      margin-bottom: 60px;
+  }
+}
+        
+/******************************
+    Carousel
+******************************/
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /*IE support*/
+}
+
+.carousel-innner {
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.car-image{
+width:400px;
+height:500px;
+}
+
